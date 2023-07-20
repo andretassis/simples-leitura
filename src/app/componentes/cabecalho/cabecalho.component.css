@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    ;
+    font-weight: 600;
+}
+
+.cabecalho-texto {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #7073ee;
+    border: 2px solid #7073ee;
+    border-radius: 10px;
+    padding: 5px 15px;
+    color: #f1ede9;
+    cursor: pointer;
+    margin: 80px;
+    font-weight: 500
+}
+
+button:hover {
+    background-color: #ef2346;
+    border: 2px solid #ef2346;
+
+}
