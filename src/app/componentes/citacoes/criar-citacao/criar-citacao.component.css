@@ -88,6 +88,10 @@ input[type="radio"] {
   border-radius: 50%;
 }
 
+.container-radio {
+  margin-top: 25px;
+}
+
 .container-radio label {
   display: flex;
   gap: 15px;
