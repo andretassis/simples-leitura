@@ -4,16 +4,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Cores
 
- - #ef2346;
- - #faba26;
- - #7073ee;
- - #f1ede9;
- - #07060e;
- - #ffffff;
+- #ef2346;
+- #faba26;
+- #7073ee;
+- #004723;
+- #07060e;
+- #ffffff;
 
 ## Fonte
 
- - Poppins
+- Poppins
 
 ## Development server
 
