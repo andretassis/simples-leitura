@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
 .cria-citacao {
   padding: 2rem 0;
 }
@@ -53,11 +55,13 @@ form {
 
 .citacao .conteudo {
   margin: 1rem auto;
-  word-wrap: break-word
+  word-wrap: break-word;
+  font-family: 'Lora';
 }
 
 .citacao .autor {
   word-wrap: break-word;
+  font-family: 'Lora';
 }
 
 .modelo1 {
@@ -125,13 +129,13 @@ input[type='radio']:checked+.custom-radio span {
   justify-content: space-evenly;
 }
 .botao {
-  background-color:#44c767;
-	border-radius:15px;
+  background-color: #44c767;
+	border-radius: 15px;
   border: 1px solid #44c767;
 	display: inline-block;
-	cursor:pointer;
+	cursor: pointer;
 	color:#ffffff;
-	padding:16px 31px;
+	padding: 10px 30px;
 	text-decoration:none;
   font-weight: 500;
 }
@@ -142,6 +146,6 @@ input[type='radio']:checked+.custom-radio span {
 }
 
 .botao:active {
-  position:relative;
-	top:1px;
+  position: relative;
+	top: 1px;
 }

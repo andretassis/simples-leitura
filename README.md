@@ -8,6 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - #faba26;
 - #7073ee;
 - #004723;
+- #44c767;
 - #07060e;
 - #ffffff;
 
