@@ -7,6 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CriarCitacaoComponent implements OnInit {
 
+  citacao = {
+    id: 1,
+    conteudo: 'Citação de teste.',
+    autor: 'Testando Autor',
+    modelo: ''
+  }
+
+  criarCitacao() {
+    alert('Citação criada!')
+  }
+
+  cancelar() {
+    alert('Cancelamento realizado!')
+  }
+
   constructor() { }
 
   ngOnInit(): void {
