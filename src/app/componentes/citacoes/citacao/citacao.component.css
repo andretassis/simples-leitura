@@ -1,0 +1,70 @@
+.acoes {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.citacao {
+  background-color: #ffffff;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin: 0.3rem 0 1rem;
+}
+
+.citacao-p {
+  width: 262px;
+}
+
+.citacao-g {
+  width: 556px;
+}
+
+.citacao .conteudo {
+  margin: 1rem auto;
+  word-wrap: break-word;
+  font-family: 'Lora';
+}
+
+.autor b {
+  word-wrap: break-word;
+  font-family: 'Lora';
+}
+
+.modelo1 {
+  color: #ef2346;
+  box-shadow: 8px 8px 0 #ef2346;
+  border: 1px solid #ef2346;
+}
+
+.modelo2 {
+  color: #faba26;
+  box-shadow: 8px 8px 0 #faba26;
+  border: 1px solid #faba26;
+}
+
+.modelo3 {
+  color: #7073ee;
+  box-shadow: 8px 8px 0 #7073ee;
+  border: 1px solid #7073ee;
+}
+
+.botao-excluir {
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.botao-editar {
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.acoes img {
+  width: 20px;
+  height: 20px;
+}
+

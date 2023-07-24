@@ -1,0 +1,13 @@
+<div class="citacao {{ citacao.modelo }}" [ngClass]="larguraCitacao()">
+  <img src="../../../../assets/imagens/{{ citacao.modelo }}.png" alt="Aspas azuis">
+  <p class="conteudo">{{ citacao.conteudo }}</p>
+  <p class="autor"><b>{{ citacao.autor }}</b></p>
+  <div class="acoes">
+    <button class="botao-editar">
+      <img src="../../../../assets/imagens/icone-editar.png" alt="Icone de editar">
+    </button>
+    <button class="botao-excluir">
+      <img src="../../../../assets/imagens/icone-excluir.png" alt="Icone de excluir">
+    </button>
+  </div>
+</div>

@@ -3,6 +3,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+}
+
+.mural {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  flex-wrap: wrap;
+  max-width: 85%;
 }
 
 .botao {

@@ -3,4 +3,13 @@
     <h2>Meu Mural</h2>
   </header>
   <button routerLink="/criar-citacao" class="botao">Adicionar citação</button>
-</section>>
+  <div class="mural" *ngIf="listaCitacoes.length > 0, else semCitacoes">
+    <div *ngFor="let citacao of listaCitacoes">
+      <app-citacao [citacao]="citacao"></app-citacao>
+    </div>
+  </div>
+</section>
+<ng-template #semCitacoes>
+  <p>Ainda não há citações cadastradas!</p>
+</ng-template>
+

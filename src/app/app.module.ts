@@ -8,6 +8,7 @@ import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { CriarCitacaoComponent } from './componentes/citacoes/criar-citacao/criar-citacao.component';
 import { FormsModule } from '@angular/forms';
 import { MuralCitacaoComponent } from './componentes/citacoes/mural-citacao/mural-citacao.component';
+import { CitacaoComponent } from './componentes/citacoes/citacao/citacao.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MuralCitacaoComponent } from './componentes/citacoes/mural-citacao/mura
     CabecalhoComponent,
     RodapeComponent,
     CriarCitacaoComponent,
-    MuralCitacaoComponent
+    MuralCitacaoComponent,
+    CitacaoComponent
   ],
   imports: [
     BrowserModule,
