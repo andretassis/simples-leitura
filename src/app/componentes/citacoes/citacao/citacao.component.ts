@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Citacao } from './citacao';
 
 @Component({
   selector: 'app-citacao',
@@ -7,7 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CitacaoComponent implements OnInit {
 
-  @Input() citacao = {
+  @Input() citacao: Citacao = {
+    id: 0,
     conteudo: 'Testando citaçãodasdsadasdsadadsadsadsadadasdsadasdadsaassa',
     autor: 'Autor da citacao',
     modelo: 'modelo1'
