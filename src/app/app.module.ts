@@ -7,13 +7,15 @@ import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component'
 import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { CriarCitacaoComponent } from './componentes/citacoes/criar-citacao/criar-citacao.component';
 import { FormsModule } from '@angular/forms';
+import { MuralCitacaoComponent } from './componentes/citacoes/mural-citacao/mural-citacao.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CabecalhoComponent,
     RodapeComponent,
-    CriarCitacaoComponent
+    CriarCitacaoComponent,
+    MuralCitacaoComponent
   ],
   imports: [
     BrowserModule,

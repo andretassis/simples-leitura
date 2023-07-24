@@ -1,0 +1,29 @@
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+  margin: 50px 0 ;
+  background-color: #44c767;
+	border-radius: 15px;
+  border: 1px solid #44c767;
+	display: inline-block;
+	cursor: pointer;
+	color:#ffffff;
+	padding: 10px 30px;
+	text-decoration:none;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #2abd85;
+  border: 1px solid #2abd85;
+}
+
+button:active {
+  position: relative;
+	top: 1px;
+}
