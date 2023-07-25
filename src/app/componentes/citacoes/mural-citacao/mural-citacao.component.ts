@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Citacao } from '../citacao/citacao';
+import { CitacaoService } from '../citacao.service';
 
 @Component({
   selector: 'app-mural-citacao',
@@ -10,9 +11,12 @@ export class MuralCitacaoComponent implements OnInit {
 
   listaCitacoes: Array<Citacao> = []
 
-  constructor() { }
+  constructor(private service: CitacaoService) { }
 
   ngOnInit(): void {
+    this.service.listar().subscribe((listaCitacoes) => {
+      this.listaCitacoes = listaCitacoes
+    })
   }
 
 }

@@ -1,5 +1,5 @@
 export interface Citacao {
-  id: number,
+  id?: number,
   conteudo: string,
   autor: string,
   modelo: string

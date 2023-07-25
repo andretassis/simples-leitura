@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CitacaoService } from '../citacao.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-criar-citacao',
@@ -8,21 +10,26 @@ import { Component, OnInit } from '@angular/core';
 export class CriarCitacaoComponent implements OnInit {
 
   citacao = {
-    id: 1,
-    conteudo: 'Citação de teste.',
-    autor: 'Testando Autor',
-    modelo: ''
+    conteudo: '',
+    autor: '',
+    modelo: 'modelo1'
   }
 
+  constructor(
+    private service: CitacaoService,
+    private router: Router
+    ) { }
+
   criarCitacao() {
-    alert('Citação criada!')
+    return this.service.cadastrar(this.citacao).subscribe(() => {
+      this.router.navigate(['/meu-mural'])
+    })
   }
 
   cancelar() {
-    alert('Cancelamento realizado!')
+    this.router.navigate(['/meu-mural'])
   }
 
-  constructor() { }
 
   ngOnInit(): void {
   }

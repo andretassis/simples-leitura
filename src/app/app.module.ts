@@ -9,6 +9,7 @@ import { CriarCitacaoComponent } from './componentes/citacoes/criar-citacao/cria
 import { FormsModule } from '@angular/forms';
 import { MuralCitacaoComponent } from './componentes/citacoes/mural-citacao/mural-citacao.component';
 import { CitacaoComponent } from './componentes/citacoes/citacao/citacao.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CitacaoComponent } from './componentes/citacoes/citacao/citacao.compone
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
