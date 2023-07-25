@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MuralCitacaoComponent } from './componentes/citacoes/mural-citacao/mural-citacao.component';
 import { CriarCitacaoComponent } from './componentes/citacoes/criar-citacao/criar-citacao.component';
 import { ExcluirCitacaoComponent } from './componentes/citacoes/excluir-citacao/excluir-citacao.component';
+import { EditarCitacaoComponent } from './componentes/citacoes/editar-citacao/editar-citacao.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'citacoes/excluir-citacao/:id',
     component: ExcluirCitacaoComponent
+  },
+  {
+    path: 'citacoes/editar-citacao/:id',
+    component: EditarCitacaoComponent
   }
 ];
 

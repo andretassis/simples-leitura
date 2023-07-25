@@ -1,0 +1,124 @@
+<section class="criar-citacao">
+  <header class="container">
+    <h2>Registre uma nova <br>citação inspiradora:</h2>
+  </header>
+  <div class="formulario">
+    <form>
+      <div class="form-inputs">
+        <label>Citação</label>
+        <input
+          type="textarea"
+          class="input textarea"
+          placeholder="Digite sua citação"
+          name="citacao"
+          [(ngModel)]="citacao.conteudo"
+        >
+      </div>
+
+      <div class="form-inputs">
+        <label>Autor</label>
+        <input
+          type="text"
+          class="input"
+          placeholder="Digite o autor"
+          name="autor"
+          [(ngModel)]="citacao.autor"
+        >
+      </div>
+
+      <label class="label-separar">Selecione o modelo do card:</label>
+
+      <div class="container-input">
+        <div>
+          <div class="container-radio">
+            <label for="modelo1">
+              <input
+                type="radio"
+                id="modelo1"
+                name="modelo-card"
+                value="modelo1"
+                [(ngModel)]="citacao.modelo"
+              >
+              <div class="custom-radio">
+                <span></span>
+              </div>
+              <span>Modelo 1</span>
+            </label>
+
+            <div>
+              Prévia:
+            </div>
+
+            <div class="citacao modelo1">
+              <img src="../../../../assets/imagens/modelo1.png" alt="Aspas vermelhas">
+              <p class="conteudo">{{ citacao.conteudo }}</p>
+              <p class="autor"><b>{{ citacao.autor }}</b></p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="container-radio">
+            <label for="modelo2">
+              <input
+                type="radio"
+                id="modelo2"
+                name="modelo-card"
+                value="modelo2"
+                [(ngModel)]="citacao.modelo"
+              >
+              <div class="custom-radio">
+                <span></span>
+              </div>
+              <span>Modelo 2</span>
+            </label>
+
+            <div>
+              Prévia:
+            </div>
+
+            <div class="citacao modelo2">
+              <img src="../../../../assets/imagens/modelo2.png" alt="Aspas amarelas">
+              <p class="conteudo">{{ citacao.conteudo }}</p>
+              <p class="autor"><b>{{ citacao.autor }}</b></p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="container-radio">
+            <label for="modelo3">
+              <input
+                type="radio"
+                id="modelo3"
+                name="modelo-card"
+                value="modelo3"
+                [(ngModel)]="citacao.modelo"
+              >
+              <div class="custom-radio">
+                <span></span>
+              </div>
+              <span>Modelo 3</span>
+            </label>
+
+            <div>
+              Prévia:
+            </div>
+
+            <div class="citacao modelo3">
+              <img src="../../../../assets/imagens/modelo3.png" alt="Aspas azuis">
+              <p class="conteudo">{{ citacao.conteudo }}</p>
+              <p class="autor"><b>{{ citacao.autor }}</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-botao">
+        <button (click)="editarCitacao()" class="botao">Registrar</button>
+        <button (click)="cancelar()" class="botao">Cancelar</button>
+      </div>
+
+    </form>
+  </div>
+</section>

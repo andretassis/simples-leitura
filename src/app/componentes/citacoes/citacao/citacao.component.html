@@ -3,7 +3,7 @@
   <p class="conteudo">{{ citacao.conteudo }}</p>
   <p class="autor"><b>{{ citacao.autor }}</b></p>
   <div class="acoes">
-    <button class="botao-editar">
+    <button routerLink="/citacoes/editar-citacao/{{ citacao.id }}" class="botao-editar">
       <img src="../../../../assets/imagens/icone-editar.png" alt="Icone de editar">
     </button>
     <button routerLink="/citacoes/excluir-citacao/{{ citacao.id }}" class="botao-excluir">

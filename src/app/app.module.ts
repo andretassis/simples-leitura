@@ -11,6 +11,8 @@ import { MuralCitacaoComponent } from './componentes/citacoes/mural-citacao/mura
 import { CitacaoComponent } from './componentes/citacoes/citacao/citacao.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ExcluirCitacaoComponent } from './componentes/citacoes/excluir-citacao/excluir-citacao.component';
+import { EditarCitacaoComponent } from './componentes/citacoes/editar-citacao/editar-citacao.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { ExcluirCitacaoComponent } from './componentes/citacoes/excluir-citacao/
     CriarCitacaoComponent,
     MuralCitacaoComponent,
     CitacaoComponent,
-    ExcluirCitacaoComponent
+    ExcluirCitacaoComponent,
+    EditarCitacaoComponent,
   ],
   imports: [
     BrowserModule,

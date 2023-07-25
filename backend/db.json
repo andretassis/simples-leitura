@@ -8,9 +8,9 @@
     },
     {
       "id": 2,
-      "conteudo": "Esse é o segundo elemento do array.",
-      "autor": "Passos",
-      "modelo": "modelo2"
+      "conteudo": "Teste de modificação de array",
+      "autor": "Passos de Tassis",
+      "modelo": "modelo1"
     },
     {
       "id": 3,
