@@ -12,6 +12,7 @@ import { CitacaoComponent } from './componentes/citacoes/citacao/citacao.compone
 import { HttpClientModule } from '@angular/common/http';
 import { ExcluirCitacaoComponent } from './componentes/citacoes/excluir-citacao/excluir-citacao.component';
 import { EditarCitacaoComponent } from './componentes/citacoes/editar-citacao/editar-citacao.component';
+import { HomeComponent } from './componentes/home/home.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { EditarCitacaoComponent } from './componentes/citacoes/editar-citacao/ed
     CitacaoComponent,
     ExcluirCitacaoComponent,
     EditarCitacaoComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

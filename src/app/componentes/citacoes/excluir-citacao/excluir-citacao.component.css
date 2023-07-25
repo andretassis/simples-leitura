@@ -1,0 +1,56 @@
+.container {
+  text-align: center;
+  margin: 100px;
+}
+
+.container p {
+  font-weight: 700;
+}
+
+.container button {
+  margin: 50px 10px;
+}
+
+.botao-confirmar {
+  background-color: #44c767;
+	border-radius: 15px;
+  border: 1px solid #44c767;
+	display: inline-block;
+	cursor: pointer;
+	color:#ffffff;
+	padding: 10px 30px;
+	text-decoration:none;
+  font-weight: 500;
+}
+
+.botao-cancelar {
+  background-color: #ef2346;
+	border-radius: 15px;
+  border: 1px solid #ef2346;
+	display: inline-block;
+	cursor: pointer;
+	color:#ffffff;
+	padding: 10px 30px;
+	text-decoration:none;
+  font-weight: 500;
+}
+
+.botao-confirmar:hover {
+  background-color: #2abd85;
+  border: 1px solid #2abd85;
+}
+
+.botao-confirmar:active {
+  position: relative;
+	top: 1px;
+}
+
+.botao-cancelar:hover {
+  background-color: #bd2a59;
+  border: 1px solid #bd2a59;
+}
+
+.botao-cancelar:active {
+  position: relative;
+	top: 1px;
+}

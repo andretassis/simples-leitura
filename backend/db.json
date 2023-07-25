@@ -1,22 +1,3 @@
 {
-  "citacoes": [
-    {
-      "id": 1,
-      "conteudo": "Esse é o primeiro elemento do array.",
-      "autor": "Andre",
-      "modelo": "modelo1"
-    },
-    {
-      "id": 2,
-      "conteudo": "Teste de modificação de array",
-      "autor": "Passos de Tassis",
-      "modelo": "modelo1"
-    },
-    {
-      "id": 3,
-      "conteudo": "Esse é o terceiro elemento do array.",
-      "autor": "Tassis",
-      "modelo": "modelo3"
-    }
-  ]
+  "citacoes": []
 }
