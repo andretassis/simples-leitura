@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { MuralCitacaoComponent } from './componentes/citacoes/mural-citacao/mural-citacao.component';
 import { CitacaoComponent } from './componentes/citacoes/citacao/citacao.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ExcluirCitacaoComponent } from './componentes/citacoes/excluir-citacao/excluir-citacao.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     RodapeComponent,
     CriarCitacaoComponent,
     MuralCitacaoComponent,
-    CitacaoComponent
+    CitacaoComponent,
+    ExcluirCitacaoComponent
   ],
   imports: [
     BrowserModule,

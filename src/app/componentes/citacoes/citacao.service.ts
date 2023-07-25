@@ -19,4 +19,14 @@ export class CitacaoService {
   cadastrar(citacao: Citacao): Observable<Citacao> {
     return this.http.post<Citacao>(this.API, citacao)
   }
+
+  excluir(id: number): Observable<Citacao> {
+    const url = `${this.API}/${id}`
+    return this.http.delete<Citacao>(url)
+  }
+
+  buscarId(id: number): Observable<Citacao> {
+    const url = `${this.API}/${id}`
+    return this.http.get<Citacao>(url)
+  }
 }
