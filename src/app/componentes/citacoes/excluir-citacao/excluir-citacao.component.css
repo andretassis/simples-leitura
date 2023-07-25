@@ -1,14 +1,18 @@
 .container {
   text-align: center;
-  margin: 100px;
+  margin: 100px auto;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  max-width: 400px;
+  padding: 50px;
 }
 
 .container p {
   font-weight: 700;
+  font-size: 20px;
 }
 
 .container button {
-  margin: 50px 10px;
+  margin: 20px 20px 0 20px;
 }
 
 .botao-confirmar {
