@@ -5,6 +5,7 @@ import { CriarCitacaoComponent } from './componentes/citacoes/criar-citacao/cria
 import { ExcluirCitacaoComponent } from './componentes/citacoes/excluir-citacao/excluir-citacao.component';
 import { EditarCitacaoComponent } from './componentes/citacoes/editar-citacao/editar-citacao.component';
 import { HomeComponent } from './componentes/home/home.component';
+import { EstanteComponent } from './componentes/estante/estante.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,10 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent
+  },
+  {
+    path: 'minha-estante',
+    component: EstanteComponent
   },
   {
     path: 'meu-mural',

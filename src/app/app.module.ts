@@ -6,13 +6,14 @@ import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { CriarCitacaoComponent } from './componentes/citacoes/criar-citacao/criar-citacao.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MuralCitacaoComponent } from './componentes/citacoes/mural-citacao/mural-citacao.component';
 import { CitacaoComponent } from './componentes/citacoes/citacao/citacao.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ExcluirCitacaoComponent } from './componentes/citacoes/excluir-citacao/excluir-citacao.component';
 import { EditarCitacaoComponent } from './componentes/citacoes/editar-citacao/editar-citacao.component';
 import { HomeComponent } from './componentes/home/home.component';
+import { EstanteComponent } from './componentes/estante/estante.component';
 
 
 @NgModule({
@@ -26,12 +27,14 @@ import { HomeComponent } from './componentes/home/home.component';
     ExcluirCitacaoComponent,
     EditarCitacaoComponent,
     HomeComponent,
+    EstanteComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
