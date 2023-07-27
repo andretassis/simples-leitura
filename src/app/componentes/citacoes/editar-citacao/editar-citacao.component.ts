@@ -36,7 +36,6 @@ export class EditarCitacaoComponent implements OnInit {
       }
     )}
 
-
   cancelar() {
     this.router.navigate(['/meu-mural'])
   }

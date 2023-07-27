@@ -45,4 +45,12 @@ export class CriarCitacaoComponent implements OnInit {
     cancelar() {
       this.router.navigate(['/meu-mural'])
     }
+
+    habilitarBotao(): string {
+      if(this.formulario.valid) {
+        return 'botao'
+      } else {
+        return 'botao-desabilitado'
+      }
+    }
 }

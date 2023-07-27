@@ -124,7 +124,12 @@
       </div>
 
       <div class="container-botao">
-        <button (click)="criarCitacao()" class="botao">Registrar</button>
+        <button
+          (click)="criarCitacao()"
+          [disabled]="!formulario.valid"
+          [ngClass]="habilitarBotao()"
+          >Registrar
+        </button>
         <button (click)="cancelar()" class="botao">Cancelar</button>
       </div>
 
