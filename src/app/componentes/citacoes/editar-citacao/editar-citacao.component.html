@@ -3,16 +3,21 @@
     <h2>Registre uma nova <br>citação inspiradora:</h2>
   </header>
   <div class="formulario">
-    <form>
+    <form [formGroup]="formulario" *ngIf="formulario">
       <div class="form-inputs">
         <label>Citação</label>
         <input
           type="textarea"
           class="input textarea"
           placeholder="Digite sua citação"
-          name="citacao"
-          [(ngModel)]="citacao.conteudo"
+          formControlName="conteudo"
+          id="conteudo"
         >
+      </div>
+
+      <div class="mensagem-erro"
+      *ngIf="formulario.get('conteudo')?.errors?.['required'] && formulario.get('conteudo')?.touched">
+      Preenchimento obrigatório
       </div>
 
       <div class="form-inputs">
@@ -21,9 +26,18 @@
           type="text"
           class="input"
           placeholder="Digite o autor"
-          name="autor"
-          [(ngModel)]="citacao.autor"
+          formControlName="autor"
+          id="autor"
         >
+      </div>
+
+      <div class="mensagem-erro"
+        *ngIf="formulario.get('autor')?.errors?.['required'] && formulario.get('autor')?.touched">
+        Preenchimento obrigatório
+      </div>
+      <div class="mensagem-erro"
+        *ngIf="formulario.get('autor')?.errors?.['minlength'] && formulario.get('autor')?.touched">
+        Necessário ao menos 3 caracteres.
       </div>
 
       <label class="label-separar">Selecione o modelo do card:</label>
@@ -35,9 +49,9 @@
               <input
                 type="radio"
                 id="modelo1"
-                name="modelo-card"
+                formControlName="modelo"
                 value="modelo1"
-                [(ngModel)]="citacao.modelo"
+                id="modelo1"
               >
               <div class="custom-radio">
                 <span></span>
@@ -51,8 +65,8 @@
 
             <div class="citacao modelo1">
               <img src="../../../../assets/imagens/modelo1.png" alt="Aspas vermelhas">
-              <p class="conteudo">{{ citacao.conteudo }}</p>
-              <p class="autor"><b>{{ citacao.autor }}</b></p>
+              <p class="conteudo">{{ formulario.get('conteudo')?.value }}</p>
+              <p class="autor"><b>{{ formulario.get('autor')?.value }}</b></p>
             </div>
           </div>
         </div>
@@ -63,9 +77,9 @@
               <input
                 type="radio"
                 id="modelo2"
-                name="modelo-card"
+                formControlName="modelo"
                 value="modelo2"
-                [(ngModel)]="citacao.modelo"
+                id="modelo2"
               >
               <div class="custom-radio">
                 <span></span>
@@ -79,8 +93,8 @@
 
             <div class="citacao modelo2">
               <img src="../../../../assets/imagens/modelo2.png" alt="Aspas amarelas">
-              <p class="conteudo">{{ citacao.conteudo }}</p>
-              <p class="autor"><b>{{ citacao.autor }}</b></p>
+              <p class="conteudo">{{ formulario.get('conteudo')?.value }}</p>
+              <p class="autor"><b>{{ formulario.get('autor')?.value }}</b></p>
             </div>
           </div>
         </div>
@@ -91,9 +105,9 @@
               <input
                 type="radio"
                 id="modelo3"
-                name="modelo-card"
+                formControlName="modelo"
                 value="modelo3"
-                [(ngModel)]="citacao.modelo"
+                id="modelo3"
               >
               <div class="custom-radio">
                 <span></span>
@@ -107,8 +121,8 @@
 
             <div class="citacao modelo3">
               <img src="../../../../assets/imagens/modelo3.png" alt="Aspas azuis">
-              <p class="conteudo">{{ citacao.conteudo }}</p>
-              <p class="autor"><b>{{ citacao.autor }}</b></p>
+              <p class="conteudo">{{ formulario.get('conteudo')?.value }}</p>
+              <p class="autor"><b>{{ formulario.get('autor')?.value }}</b></p>
             </div>
           </div>
         </div>
@@ -117,7 +131,8 @@
       <div class="container-botao">
         <button
           (click)="editarCitacao()"
-          class="botao"
+          [disabled]="!formulario.valid"
+          [ngClass]="habilitarBotao()"
           >Editar
         </button>
         <button (click)="cancelar()" class="botao">Cancelar</button>

@@ -149,3 +149,21 @@ input[type='radio']:checked+.custom-radio span {
   position: relative;
 	top: 1px;
 }
+
+.botao-desabilitado {
+  background-color: #949494;
+	border-radius: 15px;
+  border: 1px solid #949494;
+	display: inline-block;
+	color:#ffffff;
+	padding: 10px 30px;
+	text-decoration: none;
+  font-weight: 500;
+  transition: 0.1 ease;
+}
+
+.mensagem-erro {
+  color: #ef2346;
+  padding-left: 30px;
+  font-size: 14px;
+}

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Citacao } from '../citacao/citacao';
 import { CitacaoService } from '../citacao.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-editar-citacao',
@@ -10,33 +10,53 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class EditarCitacaoComponent implements OnInit {
 
-  citacao: Citacao =  {
-    id: 0,
-    conteudo: '',
-    autor: '',
-    modelo: ''
-  }
+  formulario!: FormGroup
 
   constructor(
     private service: CitacaoService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private formBuilder: FormBuilder
   ) { }
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id')
     this.service.buscarId(parseInt(id!)).subscribe((citacao) => {
-      this.citacao = citacao
+      this.formulario = this.formBuilder.group({
+        id: [citacao.id],
+        conteudo: [citacao.conteudo, Validators.compose([
+          Validators.required,
+          Validators.pattern((/(.|\s)*\S(.|\s)*/))
+        ])],
+        autor: [citacao.autor, Validators.compose([
+          Validators.required,
+          Validators.minLength(3)
+        ])],
+        modelo: [citacao.modelo]
+      })
     })
+
   }
 
   editarCitacao() {
-      this.service.editar(this.citacao).subscribe(() => {
+    if(this.formulario.valid) {
+      this.service.editar(this.formulario.value).subscribe(() => {
         this.router.navigate(['/meu-mural'])
       }
-    )}
+    )} else {
+      console.log('algum campo está errado')
+    }
+    }
 
   cancelar() {
     this.router.navigate(['/meu-mural'])
+  }
+
+  habilitarBotao() {
+    if (this.formulario.valid) {
+      return 'botao'
+    } else {
+      return 'botao-desabilitado'
+    }
   }
 }
