@@ -34,14 +34,12 @@ export class CriarCitacaoComponent implements OnInit {
     }
 
     criarCitacao() {
-      console.log(this.formulario)
+      console.log(this.formulario.get('autor')?.errors)
       if(this.formulario.valid) {
         return this.service.cadastrar(this.formulario.value).subscribe(() => {
           this.router.navigate(['/meu-mural'])
         })
-      } else {
-        return alert('Formulário inválido! Verifique o preenchimento dos campos!')
-      }
+      } return
     }
 
     cancelar() {

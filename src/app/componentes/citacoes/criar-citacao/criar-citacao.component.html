@@ -14,6 +14,11 @@
         >
       </div>
 
+      <div class="mensagem-erro"
+        *ngIf="formulario.get('conteudo')?.errors?.['required'] && formulario.get('conteudo')?.touched">
+        Preenchimento obrigatório
+      </div>
+
       <div class="form-inputs">
         <label>Autor</label>
         <input
@@ -22,6 +27,15 @@
           placeholder="Digite o autor"
           formControlName="autor"
         >
+      </div>
+
+      <div class="mensagem-erro"
+        *ngIf="formulario.get('autor')?.errors?.['required'] && formulario.get('autor')?.touched">
+        Preenchimento obrigatório
+      </div>
+      <div class="mensagem-erro"
+        *ngIf="formulario.get('autor')?.errors?.['minlength'] && formulario.get('autor')?.touched">
+        Necessário ao menos 3 caracteres.
       </div>
 
       <label class="label-separar">Selecione o modelo do card:</label>
