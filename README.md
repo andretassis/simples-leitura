@@ -22,3 +22,5 @@ O objetivo principal deste projeto é proporcionar uma plataforma prática e ele
 | ![#7073ee](https://via.placeholder.com/10/7073ee?text=+) #7073ee |
 | ![#004723](https://via.placeholder.com/10/004723?text=+) #004723 |
 | ![#44c767](https://via.placeholder.com/10/44c767?text=+) #44c767 |
+
+#### Deploy: https://simples-leitura.vercel.app/home
