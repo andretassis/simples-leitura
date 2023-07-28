@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
+import { HttpClient, HttpParams } from '@angular/common/http'
 import { Citacao } from './citacao/citacao';
 import { Observable } from 'rxjs';
 
@@ -12,8 +12,13 @@ export class CitacaoService {
 
   constructor(private http: HttpClient) { }
 
-  listar(): Observable<Citacao[]> {
-    return this.http.get<Citacao[]>(this.API)
+  listar(pagina: number): Observable<Citacao[]> {
+    const itensPorPagina = 6
+    let params = new HttpParams()
+      .set("_page", pagina)
+      .set("_limit", itensPorPagina)
+
+    return this.http.get<Citacao[]>(this.API, {params})
   }
 
   cadastrar(citacao: Citacao): Observable<Citacao> {

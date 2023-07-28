@@ -14,6 +14,7 @@ import { ExcluirCitacaoComponent } from './componentes/citacoes/excluir-citacao/
 import { EditarCitacaoComponent } from './componentes/citacoes/editar-citacao/editar-citacao.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { EstanteComponent } from './componentes/estante/estante.component';
+import { BotaoCarregarMaisComponent } from './componentes/citacoes/mural-citacao/botao-carregar-mais/botao-carregar-mais.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { EstanteComponent } from './componentes/estante/estante.component';
     EditarCitacaoComponent,
     HomeComponent,
     EstanteComponent,
+    BotaoCarregarMaisComponent,
   ],
   imports: [
     BrowserModule,

@@ -128,6 +128,7 @@ input[type='radio']:checked+.custom-radio span {
   display: flex;
   justify-content: space-evenly;
 }
+
 .botao {
   background-color: #44c767;
 	border-radius: 15px;

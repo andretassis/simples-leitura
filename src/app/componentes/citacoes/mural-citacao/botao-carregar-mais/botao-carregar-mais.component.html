@@ -1,0 +1,6 @@
+<div class="btn-container" *ngIf="maisCitacoes; else semMaisCitacoes">
+  <button>Carregar mais</button>
+</div>
+<ng-template #semMaisCitacoes>
+  <p class="mensagem">Todos as citações foram carregadas.</p>
+</ng-template>

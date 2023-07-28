@@ -10,12 +10,23 @@ import { CitacaoService } from '../citacao.service';
 export class MuralCitacaoComponent implements OnInit {
 
   listaCitacoes: Array<Citacao> = []
+  paginaAtual: number = 1
+  maisCitacoes: boolean = true
 
   constructor(private service: CitacaoService) { }
 
   ngOnInit(): void {
-    this.service.listar().subscribe((listaCitacoes) => {
+    this.service.listar(this.paginaAtual).subscribe((listaCitacoes) => {
       this.listaCitacoes = listaCitacoes
+    })
+  }
+
+  carregarMais() {
+    this.service.listar(++this.paginaAtual).subscribe(listaCitacoes => {
+      this.listaCitacoes.push(...listaCitacoes)
+      if(!listaCitacoes.length) {
+        this.maisCitacoes = false
+      }
     })
   }
 

@@ -43,9 +43,7 @@ export class EditarCitacaoComponent implements OnInit {
       this.service.editar(this.formulario.value).subscribe(() => {
         this.router.navigate(['/meu-mural'])
       }
-    )} else {
-      console.log('algum campo está errado')
-    }
+    )}
     }
 
   cancelar() {

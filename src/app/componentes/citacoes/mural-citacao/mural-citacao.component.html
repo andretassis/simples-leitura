@@ -9,6 +9,11 @@
     </div>
   </div>
 </section>
+<app-botao-carregar-mais
+  [maisCitacoes]="maisCitacoes"
+  (click)="carregarMais()"
+>
+</app-botao-carregar-mais>
 <ng-template #semCitacoes>
   <p>Ainda não há citações cadastradas!</p>
 </ng-template>
