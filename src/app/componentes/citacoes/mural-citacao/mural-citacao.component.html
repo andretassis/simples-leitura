@@ -1,5 +1,16 @@
 <section class="container">
   <header>
+    <div class="buscar-citacao">
+      <input
+        type="search"
+        class="buscar"
+        placeholder="O que está procurando?"
+        autofocus
+        [(ngModel)]="filtro"
+        (keyup)="pesquisar()"
+        >
+        <img src="../../../../assets/imagens/lupa.png" alt="Lupa">
+    </div>
     <h2>Meu Mural</h2>
   </header>
   <button routerLink="/criar-citacao" class="botao">Adicionar citação</button>
