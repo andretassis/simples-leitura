@@ -4,10 +4,12 @@
       "conteudo": "aaaaaaa",
       "autor": "aaaaaa",
       "modelo": "modelo2",
-      "id": 1
+      "id": 1,
+      "favorito": false
     },
     {
       "id": 2,
+      "favorito": false,
       "conteudo": "No coração da floresta encantada, esconde-se um mundo mágico onde as árvores sussurram segredos aos ventos e os animais dançam sob a luz da lua. Fadas brilhantes tecem seus feitiços, e riachos cristalinos serpenteiam pela paisagem. Neste reino de maravilhas, aventuras aguardam os corajosos viajantes que ousam explorar seus mistérios e descobrir a verdadeira essência da magia. Cada passo revela segredos ocultos e encantos há muito esquecidos. Aqueles que se entregam à beleza desse lugar místico são recompensados com a maravilha do desconhecido e a esperança de um futuro mais brilhante. Portanto, deixe-se envolver pela magia e embarque nesta jornada extraordinária em busca do inesperado.",
       "autor": "aaa",
       "modelo": "modelo1"
@@ -16,55 +18,64 @@
       "conteudo": "citacao 3",
       "autor": "citacao 3",
       "modelo": "modelo1",
-      "id": 3
+      "id": 3,
+      "favorito": false
     },
     {
       "conteudo": "citacao 4",
       "autor": "citacao 4",
       "modelo": "modelo2",
-      "id": 4
+      "id": 4,
+      "favorito": false
     },
     {
       "conteudo": "citacao 5",
       "autor": "citacao 5",
       "modelo": "modelo3",
-      "id": 5
+      "id": 5,
+      "favorito": false
     },
     {
       "conteudo": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "autor": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "modelo": "modelo1",
-      "id": 6
+      "id": 6,
+      "favorito": false
     },
     {
       "conteudo": "dsaaaaaaaaaaaaa",
       "autor": "aaaaaaaaaaaaa",
       "modelo": "modelo2",
-      "id": 7
+      "id": 7,
+      "favorito": false
     },
     {
       "conteudo": "dsadasdasdasdadasdadadadadadas",
       "autor": "dsasdasasaddasdsdas",
       "modelo": "modelo3",
-      "id": 8
+      "id": 8,
+      "favorito": false
     },
     {
       "conteudo": "jasdhiudhasuidhasuihdiuashdiuahdi asuihdsuahiasdaauius si ha uihdasiuhdiusah ui iuashdui ashduhas iuhasui h asdi hsa huisa shsu s ihh dhas hsahiahihhsihaiuh",
       "autor": "dsadasdsad",
       "modelo": "modelo1",
-      "id": 9
+      "id": 9,
+      "favorito": false
     },
     {
       "conteudo": "jkdsajkdkjsajdhaskhjdahjkjhkdasjhsadskjshjk",
       "autor": "jkhasjkhdjshakjhjshsakd",
       "modelo": "modelo1",
-      "id": 10
+      "id": 1,
+      "favorito": false
     },
     {
       "conteudo": "132321321321321313",
       "autor": "121111111321",
       "modelo": "modelo1",
-      "id": 11
+      "id": 1,
+      "favorito": false
     }
   ]
 }

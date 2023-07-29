@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Citacao } from './citacao';
+import { CitacaoService } from '../citacao.service';
 
 @Component({
   selector: 'app-citacao',
@@ -12,10 +13,11 @@ export class CitacaoComponent implements OnInit {
     id: 0,
     conteudo: 'Testando citaçãodasdsadasdsadadsadsadsadadasdsadasdadsaassa',
     autor: 'Autor da citacao',
-    modelo: 'modelo1'
+    modelo: 'modelo1',
+    favorito: false
   }
 
-  constructor() { }
+  constructor( private service: CitacaoService) { }
 
   ngOnInit(): void {
   }
@@ -25,6 +27,18 @@ export class CitacaoComponent implements OnInit {
       return 'citacao-g'
     }
     return 'citacao-p'
+  }
+
+  marcarFavorito() {
+    if(this.citacao.favorito == false) {
+      return 'inativo'
+    }
+    return 'ativo'
+  }
+
+  favoritarCitacao() {
+    this.service.favoritar(this.citacao).subscribe()
+    console.log(this.citacao.favorito)
   }
 
 }

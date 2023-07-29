@@ -15,6 +15,7 @@ export class ExcluirCitacaoComponent implements OnInit {
     conteudo: '',
     autor: '',
     modelo: '',
+    favorito: false
   }
 
   constructor(

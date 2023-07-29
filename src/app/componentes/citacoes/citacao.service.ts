@@ -33,6 +33,12 @@ export class CitacaoService {
     return this.http.put<Citacao>(url, citacao)
   }
 
+  favoritar(citacao: Citacao): Observable<Citacao> {
+    citacao.favorito = !citacao.favorito
+    const url = `${this.API}/${citacao.id}`
+    return this.http.put<Citacao>(url, citacao)
+  }
+
   excluir(id: number): Observable<Citacao> {
     const url = `${this.API}/${id}`
     return this.http.delete<Citacao>(url)

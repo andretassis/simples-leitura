@@ -12,7 +12,7 @@ export class MuralCitacaoComponent implements OnInit {
   listaCitacoes: Array<Citacao> = []
   paginaAtual: number = 1
   maisCitacoes: boolean = true
-  filtro: string = 'filter'
+  filtro: string = ''
 
   constructor(private service: CitacaoService) { }
 

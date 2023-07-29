@@ -32,7 +32,8 @@ export class EditarCitacaoComponent implements OnInit {
           Validators.required,
           Validators.minLength(3)
         ])],
-        modelo: [citacao.modelo]
+        modelo: [citacao.modelo],
+        favorito: [citacao.favorito]
       })
     })
 

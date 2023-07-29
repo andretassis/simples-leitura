@@ -3,6 +3,9 @@
   <p class="conteudo">{{ citacao.conteudo }}</p>
   <p class="autor"><b>{{ citacao.autor }}</b></p>
   <div class="acoes">
+    <button class="botao-favoritar" (click)="favoritarCitacao()">
+      <img src="../../../../assets/imagens/favorito-{{ marcarFavorito() }}.png" alt="Icone favorito {{ marcarFavorito }}">
+    </button>
     <button routerLink="/citacoes/editar-citacao/{{ citacao.id }}" class="botao-editar">
       <img src="../../../../assets/imagens/icone-editar.png" alt="Icone de editar">
     </button>
