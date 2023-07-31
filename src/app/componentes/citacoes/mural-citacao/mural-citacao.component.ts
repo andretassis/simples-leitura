@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Citacao } from '../citacao/citacao';
 import { CitacaoService } from '../citacao.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mural-citacao',
@@ -15,8 +16,12 @@ export class MuralCitacaoComponent implements OnInit {
   filtro: string = ''
   favoritos: boolean = false
   listaFavoritos: Citacao[] = []
+  titulo: string = 'Meu Mural'
 
-  constructor(private service: CitacaoService) { }
+  constructor(
+    private service: CitacaoService,
+    private router: Router
+    ) { }
 
   ngOnInit(): void {
     this.service.listar(this.paginaAtual, this.filtro, this.favoritos).subscribe((listaCitacoes) => {
@@ -42,6 +47,7 @@ export class MuralCitacaoComponent implements OnInit {
   }
 
   listarFavoritos() {
+    this.titulo = 'Citações Favoritas'
     this.favoritos = true
     this.maisCitacoes = true
     this.paginaAtual = 1
@@ -49,6 +55,14 @@ export class MuralCitacaoComponent implements OnInit {
       this.listaCitacoes = listaCitacoesFavoritas
       this.listaFavoritos = listaCitacoesFavoritas
   })
+  }
+
+  recarregarTodas() {
+    this.favoritos = false
+    this.paginaAtual = 1
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false
+    this.router.onSameUrlNavigation = 'reload'
+    this.router.navigate([this.router.url])
   }
 
 }

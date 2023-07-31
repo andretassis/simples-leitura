@@ -11,9 +11,9 @@
         >
         <img src="../../../../assets/imagens/lupa.png" alt="Lupa">
     </div>
-    <h2>Meu Mural</h2>
+    <h2>{{ titulo }}</h2>
     <div class="container-btn">
-      <button class="botao">Mural</button>
+      <button class="botao" (click)="recarregarTodas()">Todas as citações</button>
       <button class="botao" (click)="listarFavoritos()">Citações Favoritas</button>
       <button routerLink="/criar-citacao" class="botao">Nova Citação</button>
     </div>
