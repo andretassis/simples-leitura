@@ -9,10 +9,12 @@ import { CitacaoService } from '../citacao.service';
 })
 export class CitacaoComponent implements OnInit {
 
+  @Input() listaFavoritos: Citacao[] = []
+
   @Input() citacao: Citacao = {
     id: 0,
-    conteudo: 'Testando citaçãodasdsadasdsadadsadsadsadadasdsadasdadsaassa',
-    autor: 'Autor da citacao',
+    conteudo: '',
+    autor: '',
     modelo: 'modelo1',
     favorito: false
   }
@@ -37,8 +39,9 @@ export class CitacaoComponent implements OnInit {
   }
 
   favoritarCitacao() {
-    this.service.favoritar(this.citacao).subscribe()
-    console.log(this.citacao.favorito)
+    this.service.favoritar(this.citacao).subscribe(() => {
+      this.listaFavoritos.splice(this.listaFavoritos.indexOf(this.citacao), 1)
+    })
   }
 
 }

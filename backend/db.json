@@ -1,8 +1,8 @@
 {
   "citacoes": [
     {
-      "conteudo": "aaaaaaa",
-      "autor": "aaaaaa",
+      "conteudo": "A vida é o que acontece enquanto você está ocupado fazendo outros planos.",
+      "autor": "Jhon Lennon",
       "modelo": "modelo2",
       "id": 1,
       "favorito": false
@@ -11,70 +11,77 @@
       "id": 2,
       "favorito": false,
       "conteudo": "No coração da floresta encantada, esconde-se um mundo mágico onde as árvores sussurram segredos aos ventos e os animais dançam sob a luz da lua. Fadas brilhantes tecem seus feitiços, e riachos cristalinos serpenteiam pela paisagem. Neste reino de maravilhas, aventuras aguardam os corajosos viajantes que ousam explorar seus mistérios e descobrir a verdadeira essência da magia. Cada passo revela segredos ocultos e encantos há muito esquecidos. Aqueles que se entregam à beleza desse lugar místico são recompensados com a maravilha do desconhecido e a esperança de um futuro mais brilhante. Portanto, deixe-se envolver pela magia e embarque nesta jornada extraordinária em busca do inesperado.",
-      "autor": "aaa",
+      "autor": "Autor desconhecido",
       "modelo": "modelo1"
     },
     {
-      "conteudo": "citacao 3",
-      "autor": "citacao 3",
+      "conteudo": "Se você quer ser feliz, seja.",
+      "autor": "Leo Tolstoy",
       "modelo": "modelo1",
       "id": 3,
       "favorito": false
     },
     {
-      "conteudo": "citacao 4",
-      "autor": "citacao 4",
+      "conteudo": "A imaginação é mais importante que o conhecimento.",
+      "autor": "Albert Einstein",
       "modelo": "modelo2",
       "id": 4,
       "favorito": false
     },
     {
-      "conteudo": "citacao 5",
-      "autor": "citacao 5",
+      "conteudo": "A educação é a arma mais poderosa que você pode usar para mudar o mundo.",
+      "autor": "Nelson Mandela",
       "modelo": "modelo3",
       "id": 5,
       "favorito": false
     },
     {
-      "conteudo": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "autor": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "conteudo": "A liberdade é a possibilidade do isolamento. Se te é impossível viver só, nasceste escravo.",
+      "autor": "Fernando Pessoa",
       "modelo": "modelo1",
       "id": 6,
       "favorito": false
     },
     {
-      "conteudo": "dsaaaaaaaaaaaaa",
-      "autor": "aaaaaaaaaaaaa",
+      "conteudo": "Tudo o que um sonho precisa para ser realizado é alguém que acredite que ele possa ser realizado.",
+      "autor": "Roberto Shinyashiki",
       "modelo": "modelo2",
       "id": 7,
       "favorito": false
     },
     {
-      "conteudo": "dsadasdasdasdadasdadadadadadas",
-      "autor": "dsasdasasaddasdsdas",
+      "conteudo": "O verdadeiro heroísmo consiste em persistir por mais um momento, quando tudo parece perdido.",
+      "autor": "W. F. Grenfell",
       "modelo": "modelo3",
       "id": 8,
       "favorito": false
     },
     {
-      "conteudo": "jasdhiudhasuidhasuihdiuashdiuahdi asuihdsuahiasdaauius si ha uihdasiuhdiusah ui iuashdui ashduhas iuhasui h asdi hsa huisa shsu s ihh dhas hsahiahihhsihaiuh",
-      "autor": "dsadasdsad",
-      "modelo": "modelo1",
+      "conteudo": "A maior glória em viver não está em nunca cair, mas em levantar-se toda vez que caímos.",
+      "autor": "Nelson Mandela",
+      "modelo": "modelo3",
       "id": 9,
       "favorito": false
     },
     {
-      "conteudo": "jkdsajkdkjsajdhaskhjdahjkjhkdasjhsadskjshjk",
-      "autor": "jkhasjkhdjshakjhjshsakd",
-      "modelo": "modelo1",
-      "id": 1,
+      "conteudo": "Só se pode alcançar um grande êxito quando nos mantemos fiéis a nós mesmos.",
+      "autor": "Friedrich Nietzsche",
+      "modelo": "modelo2",
+      "id": 10,
       "favorito": false
     },
     {
-      "conteudo": "132321321321321313",
-      "autor": "121111111321",
+      "conteudo": "A paz não pode ser mantida à força. Só pode ser alcançada pelo entendimento.",
+      "autor": "Albert Einstein",
       "modelo": "modelo1",
-      "id": 1,
+      "id": 11,
+      "favorito": false
+    },
+    {
+      "conteudo": "A única coisa que devemos temer é o próprio medo.",
+      "autor": "Franklin D. Roosevelt",
+      "modelo": "modelo2",
+      "id": 12,
       "favorito": false
     }
   ]

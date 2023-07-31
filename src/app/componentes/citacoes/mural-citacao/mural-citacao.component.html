@@ -12,11 +12,18 @@
         <img src="../../../../assets/imagens/lupa.png" alt="Lupa">
     </div>
     <h2>Meu Mural</h2>
+    <div class="container-btn">
+      <button class="botao">Mural</button>
+      <button class="botao" (click)="listarFavoritos()">Citações Favoritas</button>
+      <button routerLink="/criar-citacao" class="botao">Nova Citação</button>
+    </div>
   </header>
-  <button routerLink="/criar-citacao" class="botao">Adicionar citação</button>
   <div class="mural" *ngIf="listaCitacoes.length > 0, else semCitacoes">
     <div *ngFor="let citacao of listaCitacoes">
-      <app-citacao [citacao]="citacao"></app-citacao>
+      <app-citacao
+        [citacao]="citacao"
+        [listaFavoritos]="listaFavoritos"
+        ></app-citacao>
     </div>
   </div>
 </section>

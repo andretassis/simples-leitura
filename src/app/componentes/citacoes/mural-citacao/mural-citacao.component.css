@@ -12,6 +12,11 @@
   margin-top: 30px;
 }
 
+.container-btn {
+  display: flex;
+  gap: 50px;
+}
+
 .mural {
   display: flex;
   flex-direction: row;
