@@ -1,0 +1,75 @@
+.cria-citacao {
+  padding: 2rem 0;
+}
+
+.container {
+  text-align: center;
+}
+
+form {
+  background: #004723;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  margin: 15px 350px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.criar-citacao form label {
+  margin: 0.2rem 0.5rem ;
+}
+
+.criar-citacao form .input {
+  border: none;
+  height: 40px;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 1rem;
+}
+
+.container-botao {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.botao {
+  background-color: #44c767;
+	border-radius: 15px;
+  border: 1px solid #44c767;
+	display: inline-block;
+	cursor: pointer;
+	color:#ffffff;
+	padding: 10px 30px;
+	text-decoration:none;
+  font-weight: 500;
+}
+
+.botao:hover {
+  background-color: #2abd85;
+  border: 1px solid #2abd85;
+}
+
+.botao:active {
+  position: relative;
+	top: 1px;
+}
+
+.botao-desabilitado {
+  background-color: #949494;
+	border-radius: 15px;
+  border: 1px solid #949494;
+	display: inline-block;
+	color:#ffffff;
+	padding: 10px 30px;
+	text-decoration: none;
+  font-weight: 500;
+  transition: 0.1 ease;
+}

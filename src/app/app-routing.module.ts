@@ -6,6 +6,7 @@ import { ExcluirCitacaoComponent } from './componentes/citacoes/excluir-citacao/
 import { EditarCitacaoComponent } from './componentes/citacoes/editar-citacao/editar-citacao.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { EstanteComponent } from './componentes/estante/estante.component';
+import { AdicionarLivroComponent } from './componentes/estante/adicionar-livro/adicionar-livro.component';
 
 const routes: Routes = [
   {
@@ -36,7 +37,11 @@ const routes: Routes = [
   {
     path: 'citacoes/editar-citacao/:id',
     component: EditarCitacaoComponent
-  }
+  },
+  {
+    path: 'adicionar-livro',
+    component: AdicionarLivroComponent
+  },
 ];
 
 @NgModule({

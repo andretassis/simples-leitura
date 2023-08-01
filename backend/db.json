@@ -33,7 +33,7 @@
       "autor": "Nelson Mandela",
       "modelo": "modelo3",
       "id": 5,
-      "favorito": false
+      "favorito": true
     },
     {
       "conteudo": "A liberdade é a possibilidade do isolamento. Se te é impossível viver só, nasceste escravo.",
@@ -68,7 +68,7 @@
       "autor": "Friedrich Nietzsche",
       "modelo": "modelo2",
       "id": 10,
-      "favorito": false
+      "favorito": true
     },
     {
       "conteudo": "A paz não pode ser mantida à força. Só pode ser alcançada pelo entendimento.",

@@ -1,0 +1,40 @@
+<section class="criar-citacao">
+  <header class="container">
+    <h2>Adicione um novo livro <br>à sua estante:</h2>
+  </header>
+  <div class="formulario">
+    <form>
+      <div class="form-inputs">
+        <label>Nome</label>
+        <input
+          type="textarea"
+          class="input textarea"
+          placeholder="Nome do livro"
+        >
+      </div>
+
+      <div class="form-inputs">
+        <label>Autor</label>
+        <input
+          type="text"
+          class="input"
+          placeholder="Digite o autor"
+        >
+      </div>
+
+      <label class="label-separar">Estante:</label>
+      <div>
+        <select>
+          <option></option>
+          <option value="desejo-ler">Desejo ler</option>
+          <option value="lendo">Lendo</option>
+        </select>
+      </div>
+      <div class="container-botao">
+        <button class="botao">Adicionar</button>
+        <button class="botao" (click)="cancelar()">Cancelar</button>
+      </div>
+
+    </form>
+  </div>
+</section>
