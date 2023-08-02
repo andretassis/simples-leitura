@@ -1,4 +1,4 @@
-.cria-citacao {
+.add-livro {
   padding: 2rem 0;
 }
 
@@ -23,13 +23,20 @@ form {
   flex-direction: column;
 }
 
-.criar-citacao form label {
+.add-livro form label {
   margin: 0.2rem 0.5rem ;
 }
 
-.criar-citacao form .input {
+.add-livro form .input {
   border: none;
   height: 40px;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 1rem;
+}
+
+.add-livro select {
+  border: none;
   padding: 0.5rem 2rem;
   border-radius: 20px;
   margin: 0.5rem 0 1rem;
@@ -73,3 +80,5 @@ form {
   font-weight: 500;
   transition: 0.1 ease;
 }
+
+
