@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,9 +9,19 @@ import { Router } from '@angular/router';
 })
 export class AdicionarLivroComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  formulario!: FormGroup
+
+  constructor(
+    private router: Router,
+    private formBuilder: FormBuilder
+  ) { }
 
   ngOnInit(): void {
+    this.formulario = this.formBuilder.group({
+      nome: ['nome teste'],
+      autor: ['autor teste'],
+      estante: ['desejo-ler']
+    })
   }
 
   cancelar() {

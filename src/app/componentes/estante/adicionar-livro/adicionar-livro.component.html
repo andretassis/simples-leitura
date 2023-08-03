@@ -3,13 +3,14 @@
     <h2>Adicione um novo livro <br>à sua estante:</h2>
   </header>
   <div class="formulario">
-    <form>
+    <form [formGroup]="formulario">
       <div class="form-inputs">
         <label>Nome</label>
         <input
           type="textarea"
           class="input textarea"
           placeholder="Nome do livro"
+          formControlName="nome"
         >
       </div>
 
@@ -19,12 +20,13 @@
           type="text"
           class="input"
           placeholder="Digite o autor"
+          formControlName="autor"
         >
       </div>
 
       <label class="label-separar">Estante:</label>
       <div>
-        <select>
+        <select formControlName="estante">
           <option value="selecione">Selecione a estante</option>
           <option value="desejo-ler">Desejo ler</option>
           <option value="lendo">Lendo</option>
