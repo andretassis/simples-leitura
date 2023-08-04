@@ -16,6 +16,7 @@ import { HomeComponent } from './componentes/home/home.component';
 import { EstanteComponent } from './componentes/estante/estante.component';
 import { BotaoCarregarMaisComponent } from './componentes/citacoes/mural-citacao/botao-carregar-mais/botao-carregar-mais.component';
 import { AdicionarLivroComponent } from './componentes/estante/adicionar-livro/adicionar-livro.component';
+import { LivroComponent } from './componentes/estante/livro/livro.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { AdicionarLivroComponent } from './componentes/estante/adicionar-livro/a
     EstanteComponent,
     BotaoCarregarMaisComponent,
     AdicionarLivroComponent,
+    LivroComponent,
   ],
   imports: [
     BrowserModule,
