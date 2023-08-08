@@ -20,15 +20,14 @@ export class AdicionarLivroComponent implements OnInit {
 
   ngOnInit(): void {
     this.formulario = this.formBuilder.group({
-      titulo: ['nome teste'],
-      autor: ['autor teste'],
-      estante: ['desejo-ler']
+      titulo: [''],
+      autor: [''],
+      estante: ['']
     })
   }
 
   adicionarLivro() {
     this.service.cadastrarLivro(this.formulario.value).subscribe(() => {
-      alert('Livro adicionado')
       this.router.navigate(['/minha-estante'])
     })
   }

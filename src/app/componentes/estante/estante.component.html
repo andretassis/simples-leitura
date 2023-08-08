@@ -5,12 +5,21 @@
     <div>
       <h3>Desejo ler</h3>
       <div class="livros">
-        <app-livro></app-livro>
+        <div *ngFor="let livro of listaDeLivros">
+          <app-livro
+            [livro]="livro"
+          ></app-livro>
+        </div>
       </div>
     </div>
     <div>
       <h3>Estou lendo</h3>
       <div class="livros">
+        <div *ngFor="let livro of listaDeLivros">
+          <app-livro
+            [livro]="livro"
+          ></app-livro>
+        </div>
       </div>
     </div>
     <div>

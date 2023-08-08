@@ -12,7 +12,6 @@ export class EstanteService {
 
   constructor (private http: HttpClient) {}
 
-  // TEM ALGO ERRADO AQUI. PRECISO CORRIGIR. NÃO ESTÁ APARECENDO A LISTA DE LIVROS ONDE EU QUERO
   listarLivro(): Observable<Livro[]> {
     return this.http.get<Livro[]>(this.API)
   }

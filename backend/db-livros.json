@@ -1,8 +1,8 @@
 {
   "livros": [
     {
-      "titulo": "nome teste",
-      "autor": "autor teste",
+      "titulo": "O Pequeno Príncipe",
+      "autor": "Jean-Paul",
       "estante": "desejo-ler",
       "id": 1
     }
