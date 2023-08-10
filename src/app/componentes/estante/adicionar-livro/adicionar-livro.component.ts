@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { EstanteService } from '../estante.service';
 
@@ -20,16 +20,23 @@ export class AdicionarLivroComponent implements OnInit {
 
   ngOnInit(): void {
     this.formulario = this.formBuilder.group({
-      titulo: [''],
-      autor: [''],
+      titulo: ['', Validators.compose([
+        Validators.required,
+        Validators.pattern(/(.|\s)*\S(.|\s)*/)
+      ])],
+      autor: ['', Validators.compose([
+        Validators.required,
+        Validators.minLength(3)
+      ])],
       estante: ['']
     })
   }
 
   adicionarLivro() {
-    this.service.cadastrarLivro(this.formulario.value).subscribe(() => {
-      this.router.navigate(['/minha-estante'])
-    })
+    if(this.formulario.valid) {
+      this.service.cadastrarLivro(this.formulario.value).subscribe(() => {
+        this.router.navigate(['/minha-estante'])
+    }) } return
   }
 
   cancelar() {
