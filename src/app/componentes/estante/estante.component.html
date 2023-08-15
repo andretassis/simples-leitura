@@ -3,7 +3,7 @@
   <button class="botao" routerLink="/adicionar-livro">Adicionar livro</button>
   <div class="container-livro">
     <div>
-      <h3>Desejo ler</h3>
+      <h3>Meus livros</h3>
       <div class="livros">
         <div *ngFor="let livro of listaDeLivros">
           <app-livro
@@ -14,12 +14,12 @@
     </div>
     <div>
       <h3>Estou lendo</h3>
-      <div class="livros">
+      <div class="livros livros-status">
       </div>
     </div>
     <div>
       <h3>Lidos</h3>
-      <div class="livros"></div>
+      <div class="livros livros-status"></div>
     </div>
   </div>
 </section>

@@ -27,8 +27,7 @@ export class AdicionarLivroComponent implements OnInit {
       autor: ['', Validators.compose([
         Validators.required,
         Validators.minLength(3)
-      ])],
-      estante: ['']
+      ])]
     })
   }
 
