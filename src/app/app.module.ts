@@ -19,6 +19,7 @@ import { AdicionarLivroComponent } from './componentes/estante/adicionar-livro/a
 import { LivroComponent } from './componentes/estante/livro/livro.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,7 @@ import { LivroComponent } from './componentes/estante/livro/livro.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

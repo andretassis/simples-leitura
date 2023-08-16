@@ -14,6 +14,15 @@
         >
       </div>
 
+      <div class="mensagem-erro"
+      *ngIf="formulario.get('titulo')?.errors?.['required'] && formulario.get('titulo')?.touched">
+        Preenchimento obrigatório
+      </div>
+      <div class="mensagem-erro"
+        *ngIf="formulario.get('titulo')?.errors?.['minlength'] && formulario.get('titulo')?.touched">
+        Necessário ao menos 3 caracteres.
+      </div>
+
       <div class="form-inputs">
         <label>Autor</label>
         <input
@@ -24,8 +33,21 @@
         >
       </div>
 
+      <div class="mensagem-erro"
+      *ngIf="formulario.get('autor')?.errors?.['required'] && formulario.get('autor')?.touched">
+        Preenchimento obrigatório
+      </div>
+      <div class="mensagem-erro"
+        *ngIf="formulario.get('autor')?.errors?.['minlength'] && formulario.get('autor')?.touched">
+        Necessário ao menos 3 caracteres.
+      </div>
+
       <div class="container-botao">
-        <button class="botao" (click)="adicionarLivro()">Adicionar</button>
+        <button
+          (click)="adicionarLivro()"
+          [disabled]="!formulario.valid"
+          [ngClass]="habilitarBotao()"
+        >Adicionar</button>
         <button class="botao" (click)="cancelar()">Cancelar</button>
       </div>
 

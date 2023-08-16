@@ -81,4 +81,10 @@ form {
   transition: 0.1 ease;
 }
 
+.mensagem-erro {
+  color: #ef2346;
+  padding-left: 30px;
+  font-size: 14px;
+}
+
 

@@ -22,10 +22,12 @@ export class AdicionarLivroComponent implements OnInit {
     this.formulario = this.formBuilder.group({
       titulo: ['', Validators.compose([
         Validators.required,
-        Validators.pattern(/(.|\s)*\S(.|\s)*/)
+        Validators.pattern(/(.|\s)*\S(.|\s)*/),
+        Validators.minLength(3)
       ])],
       autor: ['', Validators.compose([
         Validators.required,
+        Validators.pattern(/(.|\s)*\S(.|\s)*/),
         Validators.minLength(3)
       ])]
     })
@@ -40,5 +42,13 @@ export class AdicionarLivroComponent implements OnInit {
 
   cancelar() {
     this.router.navigate(['/minha-estante'])
+  }
+
+  habilitarBotao(){
+    if (this.formulario.valid) {
+      return "botao"
+    } else {
+      return "botao-desabilitado"
+    }
   }
 }
